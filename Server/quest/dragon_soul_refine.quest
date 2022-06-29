@@ -1,0 +1,17 @@
+quest dragon_soul_refine begin
+	state start begin
+		when 20001.chat."Dragon Stone Refinement" with ds.is_qualified() != 0 begin
+			say_title(mob_name(20001))
+			say("You would like to refine a Dragon Stone? Fair[ENTER]enough. You should know however, that this[ENTER]process can fail. I have heard that these Dragon[ENTER]Beans that you can find behind the spinning coin[ENTER]improve the chances of success.")
+			ds.open_refine_window()
+		end
+
+		when 20001.chat."Mythical Dragon Stone: Bonus Change" with ds.is_qualified() != 0 begin
+			say_title(mob_name(20001))
+			say("Only the Flame of the Dragon has the power to[ENTER]alter the bonuses of a Mythical Dragon Stone. The[ENTER]number of flames required depends on the clarity[ENTER]of the Dragon Stone. Do you really want to change[ENTER]your bonuses? You cannot reverse the process.")
+			if select("Yes", "No") == 1 then
+				ds.open_changeattr_window()
+			else return end
+		end
+	end
+end

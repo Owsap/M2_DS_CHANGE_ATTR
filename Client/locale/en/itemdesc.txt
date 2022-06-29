@@ -1,0 +1,2 @@
+100700	Flame of the Dragon (B)	You can change the bonuses of a Mythical Dragon Stone with this divine flame. The number of flames required depends on the clarity of the stone. Visit the alchemist to make the change.
+100701	Flame of the Dragon	You can change the bonuses of a Mythical Dragon Stone with this divine flame. The number of flames required depends on the clarity of the stone. Visit the alchemist to make the change.
