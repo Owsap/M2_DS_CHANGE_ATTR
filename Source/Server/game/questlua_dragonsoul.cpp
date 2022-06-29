@@ -13,8 +13,8 @@
 			return 0;
 		}
 
-		if (ch->DragonSoul_IsQualified())
-			ch->DragonSoul_RefineWindow_ChangeAttr_Open(CQuestManager::instance().GetCurrentNPCCharacterPtr());
+		if (c_lpCh->DragonSoul_IsQualified())
+			c_lpCh->DragonSoul_RefineWindow_ChangeAttr_Open(CQuestManager::instance().GetCurrentNPCCharacterPtr());
 
 		return 0;
 	}
